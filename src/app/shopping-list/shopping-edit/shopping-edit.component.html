@@ -1,0 +1,41 @@
+<div class="row">
+  <form>
+    <div class="row">
+      <div class="col-sm-5 form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" #nameInput />
+      </div>
+      <div class="col-sm-2 form-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" class="form-control" #amountInput />
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-xs-12">
+        <button
+          type="button"
+          class="btn btn-success"
+          style="margin-right: 0.9rem"
+          type="submit"
+          (click)="onAddItem()"
+        >
+          Add
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          style="margin-right: 0.9rem"
+          type="button"
+        >
+          Delete
+        </button>
+        <button type="button" class="btn btn-primary" type="button">
+          Clear
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- 1.use Native properties and events  with HTML elements
+2.use Custom properties and events with Directives and Components -->
